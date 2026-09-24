@@ -18,7 +18,7 @@ defmodule AshEvents.EventLogs.EventLogCloakedNoSensitiveInputs do
     clear_records_for_replay AshEvents.EventLogs.ClearRecordsCloakedNoSensitiveInputs
     persist_actor_primary_key :user_id, AshEvents.Accounts.User
     cloak_vault AshEvents.Vault
-    store_sensitive_inputs?(false)
+    store_sensitive_inputs? false
   end
 
   actions do
